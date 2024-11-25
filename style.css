@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background: rgb(246,238,227);*/
+    background-image: url(img/TrippyBackground.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255,0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    display: inline-block;
+    color: #7b5b55;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(169, 169, 169, 0.511);
+}
+
+/*================home=============*/
+
+.maincontent {
+    margin:10%;
+}
+
+.maincontent img {
+    margin: 5%;
+    width: 20%;
+    margin-left: 30%;
+}
+
+.fish-bottom {
+  justify-self: center;
+  width: 5%;
+}
+
+.infobox h1, .infobox p,.infobox hr {
+    margin-right: 55%;
+    margin-left: 5%;
+    width: auto;
+    color:#4f3a37;
+}
+
+.line {
+  width: 40%;
+  border-bottom: 1px solid #7b5b55;
+}
+
+.infobox h1 {
+  margin: 5%;
+  font-family: arial black, sans-serif;
+}
+
+.infobox {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+ .textarea {
+    flex-direction: column;
+ }
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%; 
+}
+
+/*===================gallery=========================*/
+
+.personalphoto {
+  border: 3px solid #b0a19c;
+  border-radius: 30px;
+}
+
+.gallery {
+    margin: 10%;
+}
+
+div.galleryframe {
+    border: 3px solid #b0a19c;
+    border-radius: 30px;
+    overflow: clip;
+    margin-bottom: 5%;
+  }
+  
+  div.galleryframe:hover {
+    border: 2px solid #7b5b55;
+  }
+  
+  div.galleryframe img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*================comments==================*/
+
+  #comment-box {
+    margin: 10%;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+#comment-form label {
+    margin: 5px 0;
+}
+
+#comment-form input, #comment-form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#comment-form button {
+    padding: 10px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-size: 15pt;
+    background-color: #b0a19c;
+    color: #f6eee3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#comment-form button:hover {
+    background-color: #7b5b55;
+}
+
+#comments-section {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.comment h4 {
+    margin: 0;
+}
+
+.comment p {
+    margin: 5px 0 0;
+}
+
+#message {
+  resize: none;
+}
+
+/*================contacts==================*/
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 80vh;
+  padding: 20px; 
+  flex-wrap: wrap;
+}
+
+.cool-image{
+  width: 23%;
+}
+
+
+.contact-form {
+  display: flex;
+  max-width: 500px;
+  padding: 20px;
+  padding-left: 50px;
+  margin-left: 20px;
+  border: 3px solid #b0a19c;
+  border-radius: 30px;
+  background-color: #eee5db;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 30px; 
+  font-family: arial black, sans-serif;
+  color: #4f3a37;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #7b5b55; 
+  border-radius: 4px;
+}
+
+
+.contact-form button{
+  display: block;
+  width: 95%;
+  padding: 10px;
+  font-size: 12pt;
+  background-color: #b0a19c;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+
+.contact-form button:hover {
+  background-color: #7b5b55;
+}
+
+.contact-info {
+  margin-top: 30%;
+  margin-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-info p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: auto;
+}
+
+@media only screen and (max-width: 880px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .infobox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.infobox p , h1 , hr {
+  margin-right: 0;
+}
+.maincontent{
+  margin-top: 20%;
+}
+.maincontent img {
+  margin-left: 0;
+  width: 40%;
+}
+.fish-bottom{
+  margin-top: 5%;
+  width: 10%;
+}
+.cool-image{
+  width: 50%;
+  margin-top: 10%;
+}
+.gallery {
+  margin-top: 20%;
+}
+}
+
+@media only screen and (max-width: 550px) {
+  .responsive {
+    width: 100%;
+  }
+  .infobox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.infobox p , h1 , hr {
+  margin-right: 0;
+}
+.maincontent{
+  margin-top: 20%;
+}
+
+.maincontent img {
+  margin-left: 0;
+  width: 70%;
+}
+.fish-bottom{
+  width: 15%;
+}
+.cool-image{
+  width: 70%;
+  margin-top: 10%;
+}
+.contact-form input, 
+.contact-form textarea {
+  width: 270px;
+}
+.contact-form h1 {
+  justify-self: center;
+}
+.contact-form button{
+  justify-self: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: auto;
+  margin-left: 5%;
+}
+.contact-info {
+  margin-top: 8%;
+  margin: 0;
+  padding: 5%;
+  display: flex;
+}
+.contact-info p {
+  margin-right: 5%;
+}
+.contact-form {
+  margin-left: 0;
+}
+#comment-box {
+  margin-top: 20%;
+}
+}
